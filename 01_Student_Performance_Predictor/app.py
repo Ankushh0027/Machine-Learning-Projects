@@ -31,17 +31,17 @@ col1, col2 = st.columns(2)
 # -------------------- Column 1 --------------------
 with col1:
 
-    hours_studied = st.number_input("Hours Studied", 0, 50, 10)
+    hours_studied = st.number_input("Hours Studied", 0, 50, 10,help="Total study hours during the study/Exam preparation period")
 
     attendance = st.number_input("Attendance (%)", 0, 100, 80)
 
     previous_scores = st.number_input("Previous Scores", 0, 100, 70)
 
-    sleep_hours = st.number_input("Sleep Hours", 0, 12, 7)
+    sleep_hours = st.number_input("Average Sleep Hours/day", 0, 12, 7)
 
-    tutoring_sessions = st.number_input("Tutoring Sessions", 0, 20, 2)
+    tutoring_sessions = st.number_input("Tutoring Sessions (per month)", 0, 20, 2)
 
-    physical_activity = st.number_input("Physical Activity", 0, 20, 3)
+    physical_activity = st.number_input("Physical Activity (Hours/week)", 0, 20, 3)
 
     parental_involvement = st.selectbox(
         "Parental Involvement",
@@ -150,13 +150,13 @@ if st.button("🎯 Predict Exam Score"):
 
     if score >= 90:
         st.balloons()
-        st.success("🌟 Performance : Excellent")
+        st.success("🌟 Performance : Excellent Performance")
 
     elif score >= 75:
-        st.info("✅ Performance : Good")
+        st.info("✅ Performance : Good Performance")
 
     elif score >= 60:
-        st.warning("🙂 Performance : Average")
+        st.warning("🙂 Performance : Average Performance")
 
     else:
         st.error("⚠ Needs Improvement")
