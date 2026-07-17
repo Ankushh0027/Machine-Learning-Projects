@@ -13,7 +13,7 @@ https://student-performance-predictor-regression.streamlit.app/
 - Data Preprocessing Pipeline
 - Missing Value Handling
 - One-Hot Encoding
-- Linear Regression Model
+- Multiple Linear Regression Model
 - Performance Category Prediction
 
 ## 🛠️ Tech Stack
@@ -70,9 +70,9 @@ Student_Performance_Predictor/
 
 ## Installation
 
-git clone <repository>
+git clone <https://github.com/Ankushh0027/Machine-Learning-Projects>
 
-cd Student_Performance_Predictor
+cd  Machine-Learning-Projects/01_Student_Performance_Predictor
 
 pip install -r requirements.txt
 
