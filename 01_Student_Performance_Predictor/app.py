@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os
 
 # -------------------- Page Config --------------------
 st.set_page_config(
@@ -9,9 +10,15 @@ st.set_page_config(
     layout="wide"
 )
 
-# -------------------- Load Model --------------------
-model = joblib.load("models/student_performance_model.pkl")
-preprocessor = joblib.load("models/preprocessor.pkl")
+# ------------- Load Model -----------------------
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+model_path = os.path.join(current_dir, "models", "student_performance_model.pkl")
+preprocessor_path = os.path.join(current_dir, "models", "preprocessor.pkl")
+
+model = joblib.load(model_path)
+preprocessor = joblib.load(preprocessor_path)
+
 
 # -------------------- Title --------------------
 st.title("🎓 Student Performance Predictor")
