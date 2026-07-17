@@ -4,8 +4,8 @@ This repository contains my machine learning projects built while learning ML fr
 
 ## Projects
 
-- Student Performance Prediction (In Progress)
-- House Price Prediction
+- Student Performance Prediction .
+- House Price Prediction (In progress)
 - Diabetes Prediction
 - Spam Email Classifier
 - Customer Churn Prediction
